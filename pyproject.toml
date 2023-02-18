@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "torjoman-telegram"
+version = "0.1.0"
+description = "Telegram frontend for Torjoman."
+authors = ["Your Name <you@example.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{include = "torjoman_telegram"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyrogram = "^2.0.97"
+tgcrypto = "^1.2.5"
+apscheduler = "^3.10.0"
+python-dotenv = "^0.21.1"
+uvloop = {version = "^0.17.0", platform = "linux"}
+ormar = {extras = ["postgresql"], version = "^0.12.1"}
+pytorjoman = {git = "https://github.com/aosus/Pytorjoman"}
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
