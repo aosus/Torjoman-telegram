@@ -105,5 +105,5 @@ async def register(c, msg: Message):
     user.access_token = u._access_token
     user.refresh_token = u._refresh_token
     await user.update()
-    await msg.reply_to_message.edit(texts.LOGGED_IN.format(name=u.first_name))
+    await msg.reply_to_message.edit(texts.REGISTERED)
     await msg.delete()
