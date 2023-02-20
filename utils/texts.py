@@ -1,8 +1,11 @@
 USERNAME = "Username"
 PASSWORD = "Password"
+FIRST_NAME = "First Name"
+LAST_NAME = "Last Name"
+EMAIL = "Email"
 # start.py
 LOGIN_OR_REGISTER = "Hi, do you have account or you want to create new one ?"
-    #  Keyboards
+# login.py
 LOGIN = "Login"
 REGISTER = "Register"
 SEND_USERNAME = "Please reply to this message with your username."
@@ -10,3 +13,10 @@ SEND_PASSWORD = "Please reply to this message with your password."
 LOGGED_IN = "You have been logged in successfully as {name}."
 FIELD_LENGTH = "{} length must be at least {} characters\n{}"
 INCORRECT_PASSWORD = f"Incorrect username or password.\n{SEND_USERNAME}"
+# register.py
+SEND_FIRST_NAME = "Please reply to this message with your first name."
+SEND_LAST_NAME = "Please reply to this message with your last name."
+SEND_EMAIL = "Please reply to this message with your email."
+INVALID_EMAIL = f"Invalid email.\n{SEND_EMAIL}"
+SEND_PASSWORD_REGISTER = "Please reply to this message with your password.\n Note: Keep your password in a safe place, your message will be deleted."
+USER_ALREADY_EXISTS = "User already exists"

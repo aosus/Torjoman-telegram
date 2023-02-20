@@ -9,12 +9,12 @@ from pytorjoman import Account, errors
 @Client.on_callback_query(filters.regex('^login$'))
 async def ask_for_username(_, cb: CallbackQuery):
     user = await User.objects.get(user_id=cb.from_user.id)
-    user.data['step'] = "get_username"
+    user.data['step'] = "login_get_username"
     await user.update(['data'])
     await cb.edit_message_text(texts.SEND_USERNAME)
 
 
-@Client.on_message(filters.text & user_step("get_username") & filters.reply)
+@Client.on_message(filters.text & user_step("login_get_username") & filters.reply)
 async def get_username(_, msg: Message):
     if len(msg.text) < 5:
         await msg.reply_to_message.edit(texts.FIELD_LENGTH.format(texts.USERNAME, 5, texts.SEND_USERNAME))
@@ -22,7 +22,7 @@ async def get_username(_, msg: Message):
         return
     user = await User.objects.get(user_id=msg.from_user.id)
     user.data = {
-        'step': 'get_password',
+        'step': 'login_get_password',
         'login': {
             'username': msg.text,
         }
@@ -31,7 +31,7 @@ async def get_username(_, msg: Message):
     await msg.reply_to_message.edit(texts.SEND_PASSWORD)
     await msg.delete()
     
-@Client.on_message(filters.text & user_step("get_password") & filters.reply)
+@Client.on_message(filters.text & user_step("login_get_password") & filters.reply)
 async def get_password(c, msg: Message):
     if len(msg.text) < 8:
         await msg.reply_to_message.edit(texts.FIELD_LENGTH.format(texts.PASSWORD, 5, texts.SEND_USERNAME))
