@@ -34,7 +34,7 @@ async def ask_for_new_password(_, msg: Message):
 @Client.on_message(filters.text & myfilters.user_step("settings_get_new_password") & filters.reply)
 async def change_password(c, msg: Message):
     if len(msg.text) < 8:
-        await msg.reply_to_message.edit(texts.FIELD_LENGTH.format(texts.PASSWORD, 5, texts.SEND_NEW_PASSWORD))
+        await msg.reply_to_message.edit(texts.FIELD_LENGTH.format(texts.PASSWORD, 8, texts.SEND_NEW_PASSWORD))
         await msg.delete()
         return
     user = await User.objects.get(user_id=msg.from_user.id)
