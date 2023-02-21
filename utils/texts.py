@@ -35,3 +35,6 @@ PASSWORD_CHANGED = "Your password has been changed successfully"
 # settings/change_preferences/first_name.py
 SEND_NEW_FIRST_NAME = "Please reply to this message with your new first name."
 FIRST_NAME_CHANGED = "Your first name has been changed successfully"
+# settings/change_preferences/first_name.py
+SEND_NEW_LAST_NAME = "Please reply to this message with your new last name."
+LAST_NAME_CHANGED = "Your last name has been changed successfully"
