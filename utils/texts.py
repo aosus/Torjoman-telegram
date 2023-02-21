@@ -22,3 +22,7 @@ INVALID_EMAIL = f"Invalid email.\n{SEND_EMAIL}"
 SEND_PASSWORD_REGISTER = "Please reply to this message with your password.\n Note: Keep your password in a safe place, your message will be deleted."
 USER_ALREADY_EXISTS = "User already exists"
 REGISTERED = "You have been registered successfully, you can change your preferences in the settings"
+# settings/main.py
+SETTINGS_MAIN = "What do you want to change?"
+CHANGE_PASSWORD = "Change password"
+CHANGE_PREFERENCES = "Change preferences"
