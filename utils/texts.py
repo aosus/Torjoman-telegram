@@ -4,6 +4,7 @@ FIRST_NAME = "First Name"
 LAST_NAME = "Last Name"
 EMAIL = "Email"
 # start.py
+START_MESSAGE = "Hello, if you want to change your preferences please send /settings"
 LOGIN_OR_REGISTER = "Hi, do you have account or you want to create new one ?"
 # login.py
 LOGIN = "Login"
