@@ -3,12 +3,13 @@ PASSWORD = "Password"
 FIRST_NAME = "First Name"
 LAST_NAME = "Last Name"
 EMAIL = "Email"
+TOKEN_EXPIRED = "Token has expired. Please login again"
 # start.py
 START_MESSAGE = "Hello, if you want to change your preferences please send /settings"
 LOGIN_OR_REGISTER = "Hi, do you have account or you want to create new one ?"
-# login.py
 LOGIN = "Login"
 REGISTER = "Register"
+# login.py
 SEND_USERNAME = "Please reply to this message with your username."
 SEND_PASSWORD = "Please reply to this message with your password."
 LOGGED_IN = "You have been logged in successfully as {name}."
@@ -26,3 +27,6 @@ REGISTERED = "You have been registered successfully, you can change your prefere
 SETTINGS_MAIN = "What do you want to change?"
 CHANGE_PASSWORD = "Change password"
 CHANGE_PREFERENCES = "Change preferences"
+# settings/change_password.py
+SEND_NEW_PASSWORD = "Please reply to this message with your  new password.\n Note: Keep your password in a safe place, your message will be deleted."
+PASSWORD_CHANGED = "Your new password has been changed successfully"
