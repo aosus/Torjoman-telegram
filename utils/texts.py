@@ -32,3 +32,6 @@ CHANGE_PREFERENCES = "Change preferences"
 # settings/change_password.py
 SEND_NEW_PASSWORD = "Please reply to this message with your  new password.\n Note: Keep your password in a safe place, your message will be deleted."
 PASSWORD_CHANGED = "Your password has been changed successfully"
+# settings/change_preferences/first_name.py
+SEND_NEW_FIRST_NAME = "Please reply to this message with your new first name."
+FIRST_NAME_CHANGED = "Your first name has been changed successfully"
