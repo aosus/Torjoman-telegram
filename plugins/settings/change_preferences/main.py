@@ -15,8 +15,8 @@ async def change_preferences_main(_, cb: CallbackQuery):
         [
             [InlineKeyboardButton(texts.FIRST_NAME, "settings_change_first_name")],
             [InlineKeyboardButton(texts.LAST_NAME, "settings_change_last_name")],
-            [InlineKeyboardButton(texts.SENDING_TIME, "settings_change_sending_time")],
-            [InlineKeyboardButton(texts.NUMBER_OF_WORDS, "settings_change_number_of_words")],
+            [InlineKeyboardButton(texts.SENDING_TIME, f"settings_change_sending_time_{user.send_time}")],
+            [InlineKeyboardButton(texts.NUMBER_OF_WORDS, f"settings_change_number_of_words_{user.number_of_words}")],
         ]
     ))
 

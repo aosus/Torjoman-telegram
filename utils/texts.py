@@ -6,6 +6,7 @@ EMAIL = "Email"
 TOKEN_EXPIRED = "Token has expired. Please login again"
 SENDING_TIME = "Sending time"
 NUMBER_OF_WORDS = "Number of words"
+BACK = "Back"
 # start.py
 START_MESSAGE = "Hello, if you want to change your preferences please send /settings"
 LOGIN_OR_REGISTER = "Hi, do you have account or you want to create new one ?"
