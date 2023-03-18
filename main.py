@@ -1,10 +1,8 @@
 from sys import platform
 
 if platform == 'linux':
-  import asyncio
-
   import uvloop
-  asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+  uvloop.install()
 
 from os import environ
 
